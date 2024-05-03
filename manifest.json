@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3 ,
+	"name": "Study Night",
+	"description": "study tool",
+	"version": "3.0",
+	"action":{
+		"default_popup": "popup/popup.html"
+	},
+	"icons": {
+		"16":"popup/images/icon.png"
+	},
+	"background":{
+		"service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "alarms",
+        "activeTab",
+        "tabs",
+		"notifications"
+        
+    ]
+}
